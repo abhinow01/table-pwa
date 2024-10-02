@@ -45,9 +45,8 @@ function renderTable() {
         ;
         tbody.appendChild(tr);
 
-        // Add event listener to the row
         tr.addEventListener('click', (event) => {
-            event.stopPropagation();  // Prevent the event from bubbling up to the document
+            event.stopPropagation(); 
             selectedRow = index;
             highlightSelectedRow();
         });
@@ -66,7 +65,6 @@ function unselectRow() {
     highlightSelectedRow();
 }
 
-// Add the functionality to detect clicks outside the table
 document.addEventListener('click', (event) => {
     const table = document.querySelector('#chemicalTable');
     if (!table.contains(event.target)) {
@@ -178,7 +176,6 @@ function moveRow(direction) {
     highlightSelectedRow();
 }
 
-// Initialize the table on page load
 document.addEventListener('DOMContentLoaded', () => {
     renderTable();
     
