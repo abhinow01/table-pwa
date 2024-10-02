@@ -84,7 +84,7 @@ tr.selected {
     padding: 5px;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 1024px) {
     body {
         font-size: 14px;
