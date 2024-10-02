@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.toolbar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 600px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+th:hover {
+    background-color: #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+tr.selected {
+    background-color: #cce5ff;
+}
+
+.edit-mode input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    th, td {
+        padding: 10px 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    button {
+        padding: 8px 14px;
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 8px 4px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        margin: 5px 0;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    th, td {
+        padding: 6px 3px;
+    }
+}

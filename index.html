@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Supplies</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chemical Supplies</h1>
+        <div class="toolbar">
+            <button id="addRow">Add Row</button>
+            <button id="moveUpBtn" style="margin : 10px ">Move Up</button>
+        <button id="moveDownBtn" style="margin : 10px ">Move Down</button>
+        </div>
+        <table id="chemicalTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Chemical Name</th>
+                    <th>Vendor</th>
+                    <th>Density</th>
+                    <th>Viscosity</th>
+                    <th>Packaging</th>
+                    <th>Pack Size</th>
+                    <th>Unit</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be rendered here -->
+            </tbody>
+        </table>
+        
+        <!-- Move buttons -->
+        
+        
+    </div>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then(function(registration) {
+                console.log('ServiceWorker registered with scope:', registration.scope);
+              }, function(error) {
+                console.log('ServiceWorker registration failed:', error);
+              });
+          });
+        }
+      </script>
+      
+</body>
+</html>
