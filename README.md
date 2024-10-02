@@ -42,7 +42,7 @@ This project is a Progressive Web App (PWA) for managing chemical supplies. The 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:abhinow01/table-pwa.git
    ```
 2. Navigate to the project directory
 3. Open the index.html file in any browser or use a local server to view the application
